@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="rtl">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+  <title>Almizan</title>
+  <meta name="yehia ali yehia" >
+  <link rel="shortcut icon" type="image/x-icon" href="app-assets/images/ico/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Quicksand:300,400,500,700" rel="stylesheet">
+  <link href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+
+  <!-- BEGIN VENDOR CSS-->
+  <link rel="stylesheet" type="text/css" href="app-assets/css/vendors.css">
+  <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/ui/prism.min.css">
+  <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/file-uploaders/dropzone.min.css">
+  <!-- END VENDOR CSS-->
+  <!-- BEGIN MODERN CSS-->
+  <link rel="stylesheet" type="text/css" href="app-assets/css/app.css">
+  <link rel="stylesheet" type="text/css" href="app-assets/css/custom-rtl.css">
+  <!-- END MODERN CSS-->
+  <!-- BEGIN Page Level CSS-->
+  <link rel="stylesheet" type="text/css" href="app-assets/css/core/menu/menu-types/vertical-content-menu.css">
+  <link rel="stylesheet" type="text/css" href="app-assets/css/core/colors/palette-gradient.css">
+  <!-- END Page Level CSS-->
+  <!-- BEGIN Custom CSS-->
+  <link rel="stylesheet" type="text/css" href="assets/css/style-rtl.css">
+  <!-- END Custom CSS-->
+  <!--external-->
+  <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/file-uploaders/dropzone.css">
+  <!--external-->
+</head>
+<body class="vertical-layout vertical-content-menu 2-columns   menu-expanded fixed-navbar"
+      data-open="click" data-menu="vertical-content-menu" data-col="2-columns">
+  <!-- fixed-top-->
+  <nav class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-light navbar-hide-on-scroll navbar-border navbar-shadow navbar-brand-center">
+    <div class="navbar-wrapper">
+      <div class="navbar-header">
+        <ul class="nav navbar-nav flex-row">
+          <li class="nav-item mobile-menu d-md-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ft-menu font-large-1"></i></a></li>
+          <li class="nav-item">
+            <a class="navbar-brand" href="index.html">
+              <img class="brand-logo" alt="modern admin logo" src="app-assets/images/logo/logo.png">
+              <h3 class="brand-text">S3 Admin</h3>
+            </a>
+          </li>
+          <li class="nav-item d-md-none">
+            <a class="nav-link open-navbar-container" data-toggle="collapse" data-target="#navbar-mobile"><i class="la la-ellipsis-v"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-container content">
+        <div class="collapse navbar-collapse" id="navbar-mobile">
+          <ul class="nav navbar-nav mr-auto float-left">
+            <li class="nav-item d-none d-md-block"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ft-menu"></i></a></li>
+            <li class="nav-item d-none d-md-block"><a class="nav-link nav-link-expand" href="#"><i class="ficon ft-maximize"></i></a></li>
+          </ul>
+          <ul class="nav navbar-nav float-right">
+            <li class="dropdown dropdown-user nav-item">
+              <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
+                <span class="mr-1">Hello,
+                  <span class="user-name text-bold-700">John Doe</span>
+                </span>
+                <span class="avatar avatar-online">
+                  <img src="app-assets/images/portrait/small/avatar-s-19.png" alt="avatar"><i></i></span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#"><i class="ft-user"></i> Edit Profile</a>
+                <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="ft-power"></i> Logout</a>
+              </div>
+            </li>
+            <li class="dropdown dropdown-notification nav-item">
+              <a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="ficon ft-bell"></i>
+                <span class="badge badge-pill badge-default badge-danger badge-default badge-up badge-glow">5</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                <li class="dropdown-menu-header">
+                  <h6 class="dropdown-header m-0">
+                    <span class="grey darken-2">Notifications</span>
+                  </h6>
+                  <span class="notification-tag badge badge-default badge-danger float-right m-0">5 New</span>
+                </li>
+                <li class="scrollable-container media-list w-100">
+                  <a href="javascript:void(0)">
+                    <div class="media">
+                      <div class="media-left align-self-center"><i class="ft-plus-square icon-bg-circle bg-cyan"></i></div>
+                      <div class="media-body">
+                        <h6 class="media-heading">You have new order!</h6>
+                        <p class="notification-text font-small-3 text-muted">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                        <small>
+                          <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">30 minutes ago</time>
+                        </small>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)">
+                    <div class="media">
+                      <div class="media-left align-self-center"><i class="ft-download-cloud icon-bg-circle bg-red bg-darken-1"></i></div>
+                      <div class="media-body">
+                        <h6 class="media-heading red darken-1">99% Server load</h6>
+                        <p class="notification-text font-small-3 text-muted">Aliquam tincidunt mauris eu risus.</p>
+                        <small>
+                          <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Five hour ago</time>
+                        </small>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)">
+                    <div class="media">
+                      <div class="media-left align-self-center"><i class="ft-alert-triangle icon-bg-circle bg-yellow bg-darken-3"></i></div>
+                      <div class="media-body">
+                        <h6 class="media-heading yellow darken-3">Warning notifixation</h6>
+                        <p class="notification-text font-small-3 text-muted">Vestibulum auctor dapibus neque.</p>
+                        <small>
+                          <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Today</time>
+                        </small>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)">
+                    <div class="media">
+                      <div class="media-left align-self-center"><i class="ft-check-circle icon-bg-circle bg-cyan"></i></div>
+                      <div class="media-body">
+                        <h6 class="media-heading">Complete the task</h6>
+                        <small>
+                          <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Last week</time>
+                        </small>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)">
+                    <div class="media">
+                      <div class="media-left align-self-center"><i class="ft-file icon-bg-circle bg-teal"></i></div>
+                      <div class="media-body">
+                        <h6 class="media-heading">Generate monthly report</h6>
+                        <small>
+                          <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Last month</time>
+                        </small>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="dropdown-menu-footer"><a class="dropdown-item text-muted text-center" href="javascript:void(0)">Read all notifications</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- ////////////////////////////////////////////////////////////////////////////-->
+  <div class="app-content content">
+    <div class="content-wrapper">
+      <div class="content-header row">
+        <div class="content-header-left col-md-6 col-12 mb-2">
+          <h3 class="content-header-title">Settings</h3>
+          <div class="row breadcrumbs-top">
+            <div class="breadcrumb-wrapper col-12">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a>
+                </li>
+                <li class="breadcrumb-item"><a href="Settinges.html">Settings</a>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-menu menu-static menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+        <div class="main-menu-content">
+          <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+            <li class="nav-item"><a href="index.html"><i class="la la-home"></i><span class="menu-title" data-i18n="nav.dash.main">Dashboard</span></a>
+            </li>
+            <li class="nav-item"><a href="Users.html"><i class="la la-users"></i><span class="menu-title" data-i18n="nav.dash.main">Users</span></a>
+            </li>
+            <li class="nav-item"><a href="CustomersProducts.html"><i class="la la-user"></i><span class="menu-title" data-i18n="nav.dash.main">Customers products</span></a>
+            </li>
+            <li class="nav-item"><a href="serviceCustomers.html"><i class="fas fa-headset"></i><span class="menu-title" data-i18n="nav.dash.main">Our service customers</span></a>
+            </li>
+            <li class="nav-item"><a href="Departments.html"><i class="fab fa-product-hunt"></i><span class="menu-title" data-i18n="nav.dash.main">department</span></a>
+            </li>
+            <li class="nav-item"><a href="subscribe.html"><i class="fab fa-scribd"></i><span class="menu-title" data-i18n="nav.dash.main">Subscriptions</span></a>
+            </li>
+            <li class="nav-item"><a href="About.html"><i class="fas fa-info"></i><span class="menu-title" data-i18n="nav.dash.main">About us</span></a>
+            </li>
+            <li class="nav-item"><a href="Messages.html"><i class="fas fa-envelope"></i><span class="menu-title" data-i18n="nav.dash.main">Messages</span></a>
+            </li>
+            <li class="nav-item"><a href="invoice-table.html"><i class="fas fa-money-bill-wave-alt"></i><span class="menu-title" data-i18n="nav.dash.main">Invoices</span></a>
+            </li>
+            <li class="nav-item"><a href="Settinges.html"><i class="fas fa-cogs"></i><span class="menu-title" data-i18n="nav.dash.main">Settings</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="content-body">
+        <!-- slider section start -->
+        <section id="dropzone-examples">
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title"><i class="fas fa-cogs mr-1"></i>Settings</h4>
+                  <a class="heading-elements-toggle"><i class="la la-ellipsis-h font-medium-3"></i></a>
+                  <div class="heading-elements">
+                    <ul class="list-inline mb-0">
+                      <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                      <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                      <li><a data-action="close"><i class="ft-x"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-content collapse show">
+                  <div class="card-body">
+                    <div class="row mb-2">
+                      <div class="media col-sm-6">
+                        <label for="logo"><img class="mr-3 w-75" src="app-assets/images/avatar.jpg" alt=" logo image"></label>
+                        <div class="media-body">
+                          <h5 class="mt-0">logo</h5>
+                          <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="logo">
+                            <label class="custom-file-label" for="logo">Picture length 32 width 50 </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="media col-sm-6">
+                        <label for="icons"><img class="mr-3 w-75" src="app-assets/images/avatar.jpg" alt="icon image"></label>
+                        <div class="media-body">
+                          <h5 class="mt-0">icon</h5>
+                          <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="icons">
+                            <label class="custom-file-label" for="icons">Picture length 32 width 50 </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mb-2">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label for="name">site name</label>
+                          <input type="text" class="form-control " placeholder=" site name" id="name" value="">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label for="descptions">Site Description</label>
+                          <input type="text" class="form-control " placeholder=" وصف الموقع" id="descptions" value="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <form action="#" class="dropzone dropzone-area" id="dpz-multiple-files">
+                          <div class="dz-message">Add Photos</div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- // slider section end -->
+        <section id="why chosse">
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-header">
+                  <a class="heading-elements-toggle"><i class="la la-ellipsis-h font-medium-3"></i></a>
+                  <div class="heading-elements">
+                    <ul class="list-inline mb-0">
+                      <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                      <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                      <li><a data-action="close"><i class="ft-x"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-content collapse show">
+                  <div class="card-body">
+                    <form class="form form-horizontal striped-labels form-bordered">
+                      <div class="form-body">
+                        <h4 class="form-section"><i class="la la-info"></i> Why Chose Software</h4>
+                        <div class="row">
+                        <div class="col-sm-6">
+                        <div class="form-group row">
+                          <label class="col-md-3 label-control" for="Title1">Title 1</label>
+                          <div class="col-md-9">
+                            <input type="text" id="Title1" class="form-control" placeholder="Title 1" >
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-md-3 label-control" for="Title2">Title 2</label>
+                          <div class="col-md-9">
+                            <input type="text" id="Title2" class="form-control" placeholder="Title 2">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-md-3 label-control" for="Title3">Title 3</label>
+                          <div class="col-md-9">
+                            <input type="text" id="Title3" class="form-control" placeholder="Title 3" >
+                          </div>
+                        </div>
+                      </div>
+                        <div class="col-sm-6">
+                          <div class="form-group row">
+                            <label class="col-md-3 label-control" for="projectinput1">icon 1</label>
+                            <div class="col-md-9">
+                              <input type="file" id="projectinput1" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label class="col-md-3 label-control" for="projectinput2">icon 2</label>
+                            <div class="col-md-9">
+                              <input type="file" id="projectinput2" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label class="col-md-3 label-control" for="projectinput3">icon 3</label>
+                            <div class="col-md-9">
+                              <input type="file" id="projectinput3" class="form-control">
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="form-actions right">
+                        <button type="button" class="btn btn-warning mr-1">
+                          <i class="ft-x"></i> Cancel
+                        </button>
+                        <button type="submit" class="btn btn-primary">
+                          <i class="la la-check-square-o"></i> Save
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Social-media section start -->
+        <section id="services">
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-header">
+                  <a class="heading-elements-toggle"><i class="la la-ellipsis-h font-medium-3"></i></a>
+                  <div class="heading-elements">
+                    <ul class="list-inline mb-0">
+                      <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                      <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                      <li><a data-action="close"><i class="ft-x"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-content collapse show">
+                  <div class="card-body">
+                    <form class="form">
+                      <div class="form-body">
+                        <div class="row">
+                          <div class="form-group col-12 mb-2">
+                            <label for="facebook">facebook</label>
+                            <div class="position-relative has-icon-left">
+                              <input type="url" id="facebook" class="form-control" placeholder="facebook url" name="employeename">
+                              <div class="form-control-position">
+                                <i class="ft-facebook"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="form-group col-12 mb-2">
+                            <label for="twitter">twitter</label>
+                            <div class="position-relative has-icon-left">
+                              <input type="url" id="twitter" class="form-control" placeholder="twitter url" name="projectname">
+                              <div class="form-control-position">
+                                <i class="ft-twitter"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="form-group col-12 mb-2">
+                            <label for="instagram">instagram</label>
+                            <div class="position-relative has-icon-left">
+                              <input type="url" id="instagram" class="form-control" placeholder="instagram url" name="date">
+                              <div class="form-control-position">
+                                <i class="ft-instagram"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="form-group col-12 mb-2">
+                            <label for="google">google</label>
+                            <div class="position-relative has-icon-left">
+                              <input type="url" id="google" class="form-control" placeholder="google url" name="date">
+                              <div class="form-control-position">
+                                <i class="la la-google-plus"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-actions right">
+                        <button type="button" class="btn btn-warning mr-1">
+                          <i class="ft-x"></i> Cancel
+                        </button>
+                        <button type="submit" class="btn btn-primary">
+                          <i class="la la-check-square-o"></i> Save
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- // Social-media section end -->
+        <!-- Social-media section start -->
+        <section id="Social-media">
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-header">
+                  <a class="heading-elements-toggle"><i class="la la-ellipsis-h font-medium-3"></i></a>
+                  <div class="heading-elements">
+                    <ul class="list-inline mb-0">
+                      <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                      <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                      <li><a data-action="close"><i class="ft-x"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-content collapse show">
+                  <div class="card-body">
+                    <form class="form form-horizontal striped-labels form-bordered">
+                      <div class="form-body">
+                        <div class="form-group row">
+                          <label class="col-md-3 label-control" for="telephone">Telephone</label>
+                          <div class="col-md-9">
+                            <div class="position-relative has-icon-left">
+                              <input type="tel" id="telephone" class="form-control" placeholder="telephone">
+                              <div class="form-control-position">
+                                <i class="la la-phone-square"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-md-3 label-control" for="Email">Email</label>
+                          <div class="col-md-9">
+                            <div class="position-relative has-icon-left">
+                              <input type="email" id="Email" class="form-control" placeholder="Email" >
+                              <div class="form-control-position">
+                                <i class="la la-envelope-square"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-md-3 label-control" for="address">address</label>
+                          <div class="col-md-9">
+                            <div class="position-relative has-icon-left">
+                              <input type="text" id="address" class="form-control" >
+                              <div class="form-control-position">
+                                <i class="la la-arrow-circle-down"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-actions right">
+                        <button type="button" class="btn btn-warning mr-1">
+                          <i class="la la-remove"></i> Cancel
+                        </button>
+                        <button type="submit" class="btn btn-primary">
+                          <i class="la la-check"></i> Save
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- // Social-media section end -->
+    </div>
+    </div>
+  </div>
+
+  <!-- ////////////////////////////////////////////////////////////////////////////-->
+  <footer class="footer footer-static footer-light navbar-border navbar-shadow">
+    <p class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2">
+      <span class="float-md-left d-block d-md-inline-block">Copyright &copy; 2018 <a class="text-bold-800 grey darken-2" href="https://themeforest.net/user/pixinvent/portfolio?ref=pixinvent"
+        target="_blank">PIXINVENT </a>, All rights reserved. </span>
+      <span class="float-md-right d-block d-md-inline-blockd-none d-lg-block">Hand-crafted & Made with <i class="ft-heart pink"></i></span>
+    </p>
+  </footer>
+  <!-- BEGIN VENDOR JS-->
+  <script src="app-assets/vendors/js/vendors.min.js" type="text/javascript"></script>
+  <!-- BEGIN VENDOR JS-->
+  <!-- BEGIN PAGE VENDOR JS-->
+  <script src="app-assets/vendors/js/extensions/dropzone.min.js" type="text/javascript"></script>
+  <script src="app-assets/vendors/js/ui/prism.min.js" type="text/javascript"></script>
+  <!-- END PAGE VENDOR JS-->
+  <!-- BEGIN MODERN JS-->
+  <script src="app-assets/js/core/app-menu.js" type="text/javascript"></script>
+  <script src="app-assets/js/core/app.js" type="text/javascript"></script>
+  <script src="app-assets/js/scripts/customizer.js" type="text/javascript"></script>
+  <!-- END MODERN JS-->
+  <!-- BEGIN PAGE LEVEL JS-->
+  <script src="app-assets/js/scripts/extensions/dropzone.js" type="text/javascript"></script>
+  <!-- END PAGE LEVEL JS-->
+</body>
+</html>
